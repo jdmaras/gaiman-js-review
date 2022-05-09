@@ -77,3 +77,117 @@ function subtract(n1, n2) {
   console.log("n1, n2", n1, n2);
 }
 subtract(7);
+
+let artistFirstName = "Prince";
+let artistLastName = null; // <--- nothing, on purpose
+/*
+8 === 8; // True
+'8' === 8; //false because it's the  string of 8
+8 === '8'; // True but don't do this
+// make it 8 === Number('8');
+
+
+* Conditionals
+*/
+
+// if(/* this thing is true */){
+//     // do this stuff
+//     // inside this code block. Code Block is anything inside squirrely braces
+
+// if (true)
+// let isSomethingTure = myName === 'John';
+// if (isSomethingTrue){
+//     //code block
+// }
+// else if(17/2 >){
+//     //you can keep chaining together else
+// }
+
+// let dayOfTheWeek = 'Monday';
+// if (dayOfTheWeek == 'Monday'){
+//     console.log('Js Review');
+// }
+// else if (dayOfTheWeek === 'Tuesday'){
+//     console.log('Objects');
+// }
+// switch(dayOfTheWeek){
+//     case 'Monday';
+//         console.log('JS Review');
+//         break;
+//     case 'Tuesday';
+//         console.log('Objects');
+//         break;
+
+// }
+
+//Ternary: if/else, and reseolves to a value
+let height = 55;
+let message =
+  height > 50
+    ? "you can ride this ride" //if
+    : "keep growing, try later"; //else
+
+// let message = 'you can ride this ride';
+
+/*
+Inputs / Arguments / Parameters - all interchangeable   
+    yourHeight
+    dangerLevel
+*/
+
+function isTallEnoughToRide(yourHeight, dangerLevel) {
+  let myHeight = 50;
+  if (dangerLevel === "kiddie") {
+    minHeight = 28;
+  } else if (dangerLevel === "intense") {
+    minHeight = 55;
+  }
+  return yourHeight > minHeight; // boolean
+  // return undefined
+}
+isTallEnoughToRide(50, "kiddie");
+// ^ now you're calling to the function to run those heights and dangerlevel.
+console.log("can we", isTallEnoughToRide(50, "kiddie"));
+//console.log('can we' , undefined ) - because this isn't set up right
+
+function stressRelease() {
+  console.log("BWAAAAAAAA");
+}
+let stressLevel = 20;
+while (stressLevel > 5) {
+  stressRelease();
+  stressLevel--;
+}
+//Declaring a function
+// function declaration
+function makeASentence(words){
+    return words.join(' ') + '.';
+}
+//anonymous function
+// function expression
+function makeASentence2 = function(words){
+    return words.join(' ') + '.';
+}
+// arrow function - they need to be defined first
+let makeASentence3 = (words) => {
+    return words.join('') + '.';
+}
+// single arg does not need parenthesis
+let makeASentence4 = words => {
+    return words.join('') + '.';
+}
+// one liner
+let makeASentence5 = words => words.join('') + '.';
+
+// Calling a function
+let welcome = makeASentence(['Welcome','to','Gaiman']);
+// let welcome = 'Welcome to Gaiman.'
+
+// log() is a method of the console object
+console.log('yolo');
+
+let numbers = [1, 2, 3, 4, 5];
+// push() is a method of the numbers array
+numbers.push(6);
+
+// push is a property of numbers and it just so happens to be a function in this example
