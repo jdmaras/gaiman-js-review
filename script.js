@@ -24,3 +24,18 @@ let my-last-name= 'Maras';
 
 //SCREAMING_SNAKE_CASE
 let MY_LAST_NAME = 'Maras';
+
+/*
+Expressions
+
+
+*/
+
+console.log('My name is ' + firsName '' + myLastName);
+          //  ^ this is an expression!
+          // console.log (`My name is John Maras`);
+function add(n1, n2) {
+    return n1 + n2;
+}
+let result = add(5, 7);
+// let result = 12
