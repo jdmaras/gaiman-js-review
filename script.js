@@ -11,6 +11,7 @@ myName -- the name of the variable
 = -- the equal sign is the assignment operator
 
 (the string) 'John' -- the value
+a string is a DATA TYPE
 */
 // Use camelCase
 let myLastName = "Maras";
@@ -38,6 +39,7 @@ function add(n1, n2) {
   return n1 + n2;
 }
 let result = add(5, 7);
+console.log(result);
 // let result = 12
 //if (8 > 7) {
 // if (false)
@@ -160,34 +162,83 @@ while (stressLevel > 5) {
 }
 //Declaring a function
 // function declaration
-function makeASentence(words){
-    return words.join(' ') + '.';
+function makeASentence(words) {
+  return words.join(" ") + ".";
 }
 //anonymous function
 // function expression
-function makeASentence2 = function(words){
-    return words.join(' ') + '.';
-}
 // arrow function - they need to be defined first
 let makeASentence3 = (words) => {
-    return words.join('') + '.';
-}
+  return words.join("") + ".";
+};
 // single arg does not need parenthesis
-let makeASentence4 = words => {
-    return words.join('') + '.';
-}
+let makeASentence4 = (words) => {
+  return words.join("") + ".";
+};
 // one liner
-let makeASentence5 = words => words.join('') + '.';
+let makeASentence5 = (words) => words.join("") + ".";
 
 // Calling a function
-let welcome = makeASentence(['Welcome','to','Gaiman']);
+let welcome = makeASentence(["Welcome", "to", "Gaiman"]);
 // let welcome = 'Welcome to Gaiman.'
 
 // log() is a method of the console object
-console.log('yolo');
+console.log("yolo");
 
 let numbers = [1, 2, 3, 4, 5];
 // push() is a method of the numbers array
 numbers.push(6);
 
 // push is a property of numbers and it just so happens to be a function in this example
+
+/*
+Javascript is: a loose / dynamic typed language
+other languages are: storngly / statically typed
+*/
+
+/*
+Arrays
+list of strings or numbers
+*/
+let animals = ["cat", "dog", "bunny"];
+// the data type is an array for these strings
+let firstAnimal = animals[0]; // 'cat'
+let lastAnimal = animals[2]; // 'bunny'
+let lastAnimals = animals[animals.length - 1]; // also 'bunny' but would take last in any array
+// .length - 1 means it takes the number in the index and minus one because index starts at 0
+
+// 'for of'
+for (let animal of animals) {
+  // for every animal in the array, i'm going to assign the variable 'animal'
+  console.log(`animal is `, animal);
+  if (animals === "bunny") {
+    console.log("WABBIT");
+  }
+}
+for (let i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
+// use this one if you're looping through a ton of numbers or you need the index
+
+for (let i = 0; i < 1000; i += 5) {
+  console.log(i);
+}
+
+// while loop
+let bigNumber = 2 ** 20;
+// while (bigNumber > 1){
+//   bigNumber = bigNumber / 2;
+//   console.log(bigNumber);
+// }
+// while loop keeps running as long as it's true
+
+while (true) {
+  bigNumber = bigNumber / 2;
+  console.log(bigNumber);
+
+  if (bigNumber <= 1) {
+    //break
+  }
+}
+
+animals.push("newt", "lion", "frog");
