@@ -48,3 +48,32 @@ let isJamesBond = myName + " " + myLastName === `James Bond`;
 // let isJamesBond = 'John Maras' === 'James Bond';
 // let isJamesBond = false;
 console.log("isJamesBond", isJamesBond);
+
+// using a "+" allows you to concact and turn things into a string.
+// the + sign concats strings together but if you're mixing strings and numbers, you have to watch out
+// just don't try and add numbers and strings together
+
+let aNumberMaybe = "23";
+aNumberMaybe + 2;
+// '232' <--- concatination
+
+// Number is just a function that makes it turn what's in parenthisis into a number so it doesn't bug
+Number(aNumberMaybe) + 2;
+// 25 <---- addition
+//
+
+/*
+ NaN        means Not a Number. It means you did bad math
+undefined       means the variable hasn't been defined
+not defined         the variable  hasn't been declared
+null        nothing, on purpose
+*/
+
+let somethingMaybe;
+
+function subtract(n1, n2) {
+  // n1 = 7
+  // n2 = undefined
+  console.log("n1, n2", n1, n2);
+}
+subtract(7);
