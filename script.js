@@ -241,4 +241,4 @@ while (true) {
   }
 }
 
-animals.push("newt", "lion", "frog");
+
